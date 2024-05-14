@@ -32,4 +32,16 @@ var searcher;
         '.........';
       expect(searcher.findSpaceship(map)).toEqual([0, 0]);
     });
+  
+  
+    it('should return correct coordinates for X at the end', function () {
+      var map =
+        '.........\n' +
+        '.........\n' +
+        '.........\n' +
+        '.........\n' +
+        '.........\n' +
+        '........X';
+      expect(searcher.findSpaceship(map)).toEqual([8, 5]);
+    });
 });
