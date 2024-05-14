@@ -20,4 +20,16 @@ var searcher;
         '.........';
       expect(searcher.findSpaceship(map)).toEqual('Spaceship lost forever.');
     });
+  
+  
+    it('should return correct coordinates for X at the beginning', function () {
+      var map =
+        'X........\n' +
+        '.........\n' +
+        '.........\n' +
+        '.........\n' +
+        '.........\n' +
+        '.........';
+      expect(searcher.findSpaceship(map)).toEqual([0, 0]);
+    });
 });
