@@ -9,4 +9,15 @@ var searcher;
     var map = '';
     expect(searcher.findSpaceship(map)).toEqual('Spaceship lost forever.');
   });
+
+    it('should return a message if no X found in the map', function () {
+      var map =
+        '.........\n' +
+        '.........\n' +
+        '.........\n' +
+        '.........\n' +
+        '.........\n' +
+        '.........';
+      expect(searcher.findSpaceship(map)).toEqual('Spaceship lost forever.');
+    });
 });
