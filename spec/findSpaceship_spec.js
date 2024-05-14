@@ -44,4 +44,16 @@ var searcher;
         '........X';
       expect(searcher.findSpaceship(map)).toEqual([8, 5]);
     });
+  
+  
+    it('should return correct coordinates for the position of X', function () {
+      var map =
+        '.........\n' +
+        '.........\n' +
+        '.........\n' +
+        '...X.....\n' +
+        '.........\n' +
+        '.........';
+      expect(searcher.findSpaceship(map)).toEqual([3, 3]);
+    });
 });
